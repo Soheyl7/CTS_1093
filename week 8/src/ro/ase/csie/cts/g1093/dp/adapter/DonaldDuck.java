@@ -45,4 +45,10 @@ public class DonaldDuck implements DisneyActions {
 		
 	}
 
+	@Override
+	public void changeLocation1(int x, int y) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
