@@ -1,5 +1,13 @@
 package ro.ase.csie.cts.g1093.dp.factorymethod;
 
-public class WaterBucket {
+import ro.ase.csie.cts.g1093.dp.simplefactory.AbstractWeapon;
+
+public class WaterBucket extends AbstractWeapon {
+
+	@Override
+	public void pewPew() {
+		
+		
+	}
 
 }
