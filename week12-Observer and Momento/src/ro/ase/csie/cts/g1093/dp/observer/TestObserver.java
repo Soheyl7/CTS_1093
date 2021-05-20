@@ -3,8 +3,21 @@ package ro.ase.csie.cts.g1093.dp.observer;
 public class TestObserver {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		ServerConnectionModule connection = new ServerConnectionModule();
+		
+		BackupModule backup = new BackupModule();
+		UserNotificationModule notifications = new UserNotificationModule();
+		
+		connection.detectConnectionStatusChange(ConnectionStatus.UP);
+		
+		connection.register(notifications);
+		connection.register(backup);
+		
+		connection.detectConnectionStatusChange(ConnectionStatus.DOWN);
+		
+		connection.unregister(backup);
+		
 	}
 
 }
